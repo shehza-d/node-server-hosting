@@ -1,6 +1,6 @@
 # ai-batch-3-server-hosting
- 
-Hosting 
+
+## Hosting Platform
 
 1. Google App Engine
 1. [Vercel Hosting](https://vercel.com/dashboard)
