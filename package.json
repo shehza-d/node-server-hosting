@@ -2,10 +2,14 @@
   "name": "01.-hello-world",
   "version": "1.0.0",
   "description": "testing",
-  "main": "index.js",
+  "main": "server.mjs",
   "scripts": {
     "start": "node server.mjs",
+    "dev": "nodemon server.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "18.x.x"
   },
   "author": "",
   "license": "ISC",
