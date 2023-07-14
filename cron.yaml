@@ -1,0 +1,5 @@
+cron:
+  - description: "daily summary job"
+    url: /batch
+    target: service-name
+    # schedule: every 24 hours
