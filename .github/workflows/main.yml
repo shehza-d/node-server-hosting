@@ -25,7 +25,8 @@ jobs:
 
       - name: Deploy to App Engine
         id: deploy
-        uses: google-github-actions/deploy-appengine@v0.2.0
+        uses: "google-github-actions/deploy-appengine@v1"
+
         with:
           deliverables: app.yaml cron.yaml
           version: v1
