@@ -16,6 +16,13 @@ app.get("/name/:myName", (req, res) => {
   res.send({ message: `Hello World! by ${name}` });
 });
 
+app.get("/waiting", (req, res) => {
+  setTimeout(
+    () => res.send("Shehzad Responding late after 6s from HTTP Server"),
+    6000
+  );
+});
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
