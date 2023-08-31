@@ -1,7 +1,15 @@
 import express from "express";
+import cors from "cors";
 
 const app = express();
 const port = process.env.PORT || 3000;
+
+//middleware configuration
+app.use(
+  cors({
+    origin: ["http://localhost:3000", "https://localhost:3003", "*"],
+  })
+);
 
 app.get("/", (req, res) => {
   console.log("🚀 ~ server.mjs:7 ~ app.get ~ req:", req);
