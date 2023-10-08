@@ -1,0 +1,17 @@
+# AWS App Runner
+version: 1.0
+app:
+  runtime: nodejs20
+  build:
+    commands:
+      - npm install
+  start:
+    command: node server.mjs
+  environment:
+    - name: PORT
+      value: "8080"
+  port: 8080
+  routes:
+    - sourcePath: /
+      targetType: http
+      target: listener:8080
