@@ -1,4 +1,7 @@
 # AWS App Runner
+
+# https://docs.aws.amazon.com/apprunner/latest/dg/config-file-ref.html
+
 version: 1.0
 app:
   runtime: nodejs20
